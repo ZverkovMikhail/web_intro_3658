@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let hiList = ["привет", "привествую", "здоров", "добрый день", "добрый вечер", "hi"]
+    let name = "";
+    alert("Здравствуйте! Я бот с интелектом))");
+    let inDialog = true;
+    while (inDialog) {
+        let text = prompt(createMsg("Введите сообщение:"));
+
+        if (hiList.some(v => text.includes(v))) {
+            if (!name) {
+                name = getName();
+            }else {
+                createMsg("Похоже уже здоровались")
+            }
+        }
+        if (text.toLowerCase().includes("друг")) {
+            let isExecuted = confirm(createMsg("Уверен в нашей дружбе?"));
+            print(isExecuted ? "Я рад что мы уже подружились!))" : "Очень жаль((")
+        }
+    }
+
+    function createMsg(text) {
+        return name ? `${name}, ${text}` : text;
+    }
+
+    function getName() {
+        return prompt("Как тебя зовут?")
+    }
+
+    function print(msg) {
+        alert(msg);
+    }
+</script>
+</body>
+</html>
