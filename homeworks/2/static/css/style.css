@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Comfortaa", cursive;
+  background-color: #fff7f1;
+  color: #281b11;
+}
+h1 {
+  font-family: "Rubik Vinyl", cursive;
+}
+
+.content {
+  width: 1000px;
+  margin: 0 auto;
+}
+.block {
+  margin-top: 3em;
+}
+.block .block{
+    margin-top: 0;
+}
+.block--img {
+  display: flex;
+  gap: 1em;
+}
+.block--img img {
+  height: 100px;
+}
+
+.header {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background-image: url("http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRRv9ICxXjK-LVFv-lKRId6gB45BFoNCLsZ4dk7bZpYGblPLPG-9aYss0Z0wt2PmWDb");
+  background-size: 100% cover;
+  background-position: 10% 40%;
+  padding: 1em 2em;
+}
+.header p {
+  width: 50%;
+  background-color: #ffe4c42e;
+  padding: 1em;
+  border-radius: 1em;
+}
+.footer {
+  width: 100%;
+  height: 20vh;
+  overflow: hidden;
+  background-image: url("http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRRv9ICxXjK-LVFv-lKRId6gB45BFoNCLsZ4dk7bZpYGblPLPG-9aYss0Z0wt2PmWDb");
+  background-position: 20% 50%;
+  transform: scale(-1, 1);
+  margin-top: 3em;
+}
+
+.img {
+  width: 100%;
+}
